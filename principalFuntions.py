@@ -12,3 +12,5 @@ def dividir(numero1, numero2):
     resultadoDivisionReal = numero1 / numero2
     resultadoDivisionResto = numero1 % numero2 
     return "el resultado de la division es:" + resultadoDivisionReal + " y el resultado del resto es: " + resultadoDivisionResto
+
+##
