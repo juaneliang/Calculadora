@@ -16,6 +16,3 @@ def dividir(numero1, numero2):
 def resto(numero1, numero2):
     resultadoDivisionResto = numero1 % numero2
     return resultadoDivisionResto
-
-def printDivision(dividir, resto):
-    printResultado = "el resultado de la division es:" + dividir + " y el resultado del resto es: " + resto
