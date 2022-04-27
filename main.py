@@ -16,9 +16,6 @@ print ("4.MULTIPLICA")
 
 opcionSeleccionadaMenu = input()
 
-if opcionSeleccionadaMenu == 1:
-    resultadoSuma = sumar(numero1, numero2)
-    print("el resultado de la suma es: " + resultadoSuma)
-
-
-#
+#if opcionSeleccionadaMenu == 1:
+#    resultadoSuma = sumar(numero1, numero2)
+#    print("el resultado de la suma es: " + resultadoSuma)#
