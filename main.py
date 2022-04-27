@@ -1,5 +1,5 @@
 from json.tool import main
-from principalFuntions import dividir, multiplicar, restar, sumar
+from principalFuntions import dividir, multiplicar, restar, resto, sumar, printDivision
 
 main
 
@@ -18,7 +18,9 @@ opcCalc = input(" ")
 if opcCalc == "*":
     resultado = multiplicar(num1,num2)
 elif opcCalc == "/":
-    resultado = dividir(num1,num2)
+    resultadoDivision = dividir(num1,num2)
+    resultadoResto = resto(num1,num2)
+    print ("el resultado de la division es:" + resultadoDivision + " y el resultado del resto es: " + resultadoResto)
 elif opcCalc == "+":
     resultado = sumar(num1,num2)
 elif opcCalc == "-":

@@ -1,17 +1,21 @@
 classmethod
 
 def sumar(numero1, numero2):
-    resultadoSuma = numero1 + numero2
-    return resultadoSuma
+    return numero1 + numero2
 
 def restar(numero1, numero2):
-    return numero1 + numero2
+    return numero1 - numero2
 
 def multiplicar(numero1, numero2):
     return numero1 * numero2
 
 def dividir(numero1, numero2):
     resultadoDivisionReal = numero1 / numero2
+    return resultadoDivisionReal
+
+def resto(numero1, numero2):
     resultadoDivisionResto = numero1 % numero2
-    resultadoFinal = "el resultado de la division es:" + resultadoDivisionReal + " y el resultado del resto es: " + resultadoDivisionResto
-    return resultadoFinal
+    return resultadoDivisionResto
+
+def printDivision(dividir, resto):
+    printResultado = "el resultado de la division es:" + dividir + " y el resultado del resto es: " + resto
