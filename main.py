@@ -1,21 +1,27 @@
 from json.tool import main
-from principalFuntions import sumar
-#
+from principalFuntions import dividir, multiplicar, restar, sumar
+
 main
 
 print ("BIENVENIDO A LA CALCULADORA")
+
+num1 = int(input("valor del primer numero: "))
+num2 = int(input("valor del segundo numero: "))
+
 print ("ELIJA LA OPCION QUE NECESITE: ")
+print ("+ SUMAR ")
+print ("- RESTAR ")
+print ("/ DIVIDIR ")
+print ("* MULTIPLICAR ")
+opcCalc = input(" ")
 
+if opcCalc == "*":
+    resultado = multiplicar(num1,num2)
+elif opcCalc == "/":
+    resultado = dividir(num1,num2)
+elif opcCalc == "+":
+    resultado = sumar(num1,num2)
+elif opcCalc == "-":
+    resultado = restar(num1,num2)
 
-print ("ELIJA LA OPCION QUE NECESITE: ")
-print ("1.SUMAR")
-print ("2.RESTAR")
-print ("3.DIVIDIR")
-print ("4.MULTIPLICA")
-
-
-opcionSeleccionadaMenu = input()
-
-#if opcionSeleccionadaMenu == 1:
-#    resultadoSuma = sumar(numero1, numero2)
-#    print("el resultado de la suma es: " + resultadoSuma)#
+print (resultado)
