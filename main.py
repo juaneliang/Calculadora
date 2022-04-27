@@ -1,5 +1,5 @@
 from json.tool import main
-from principalFuntions import dividir, multiplicar, restar, resto, sumar
+from principalFuntions import dividir, multiplicar, restar, resto, sumar, ifOpcionesMenu
 
 main
 
@@ -15,15 +15,4 @@ print ("/ DIVIDIR ")
 print ("* MULTIPLICAR ")
 opcCalc = input(" ")
 
-if opcCalc == "*":
-    resultado = multiplicar(num1,num2)
-elif opcCalc == "/":
-    resultadoDivision = dividir(num1,num2)
-    resultadoResto = resto(num1,num2)
-    resultado = print ("el resultado de la division es: " + str(resultadoDivision) + " y el resultado del resto es: " + str(resultadoResto))
-elif opcCalc == "+":
-    resultado = sumar(num1,num2)
-elif opcCalc == "-":
-    resultado = restar(num1,num2)
-
-print (resultado)
+print(ifOpcionesMenu(opcCalc,num1,num2))
